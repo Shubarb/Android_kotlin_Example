@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#283071">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="399dp"
+        android:background="#101970"
+        android:gravity="center"
+        android:text="Vui lòng nhập thông tin"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="325dp"
+        android:background="#D8D8D8"
+        android:ems="10"
+        android:hint="Nhập tài khoản"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="265dp"
+        android:background="#D8D8D8"
+        android:ems="10"
+        android:hint="Nhập họ tên"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="205dp"
+        android:background="#D8D8D8"
+        android:ems="10"
+        android:hint="Nhập tuổi"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="140dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="Giới tính"
+        android:textSize="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+
+    <Spinner
+        android:id="@+id/dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="135dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="Confirm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

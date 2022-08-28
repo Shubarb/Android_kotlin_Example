@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kotlinassignment">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KotlinAssignment"
+        tools:targetApi="31">
+        <service
+            android:name="com.example.AndroidAssignment.QuangTV19_BAD_FinalTest.FinalService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <activity
+            android:name="com.example.AndroidAssignment.QuangTV19_BAD_FinalTest.MainActivityFinal"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment10.MainAss10"
+            android:exported="true"/>
+
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment9.AddNewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment9.MainActivityPhonebook"
+            android:exported="true" />
+
+        <service
+            android:name="com.example.AndroidAssignment.Assignment8.ForeGroundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment8.MainForeGround"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment7.ListView.FrameActivityListView"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment7.FrameActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment6.Bai2.SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment6.Bai2.MainActivitySetting"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment6.Bai1.DialogActivityMain"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment5.ActivityBackground"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment4.Bai2.RecycleView.FoodDetailsRecycleView"
+            android:exported="false" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment4.Bai2.RecycleView.RecycleView"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment4.Bai2.ListView.FoodDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment4.Bai2.ListView.ListView"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment4.Bai1.ActivityA"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment4.Bai1.ActivityB"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai4.ActivityBroadcastReceiver"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai4.MyReceiver1"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai4.MyReceiver2"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai4.MyReceiver3"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai4.MyReceiver4"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai4.MyReceiver5"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai3.Assignment2_3_Bai3b"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai3.Assignment2_3_Bai3a"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment1.MainActivitytestapp"
+            android:exported="false" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai2.Assignment2_3_Bai2a"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai2.Assignment2_3_Bai2b"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai1.Bai1ActivityA"
+            android:exported="true" />
+        <activity
+            android:name="com.example.AndroidAssignment.Assignment2_3.Bai1.Bai1ActivityB"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/black"
+    tools:context="com.example.AndroidAssignment.Assignment5.PutInfoFragment">
+
+    <EditText
+        android:id="@+id/edtCodefrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="195dp"
+        android:paddingStart="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Nhập mã sản phẩm"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtNamefrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="145dp"
+        android:paddingStart="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Nhập tên sản phẩm"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtInformationfrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="95dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Nhập thông tin mô tả sản phẩm"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtCostfrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Nhập giá sản phẩm"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnaddnewfrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Add new" />
+
+</FrameLayout>

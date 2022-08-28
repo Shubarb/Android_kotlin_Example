@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="check_box"
+        android:title="Check box preference" />
+    <EditTextPreference
+        android:key="edit_text"
+        android:title="Edit text preference"
+        android:summary="Click to edit text"
+        android:dialogTitle="Input preference" />
+    <ListPreference
+        android:dialogTitle="Select duration"
+        android:entries="@array/time_title"
+        android:entryValues="@array/time_value"
+        android:key="list"
+        android:summary="Click to show a list to choose from"
+        android:title="List Preference"/>
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="switch"
+        android:title="Switch preference"
+        android:summary="Click to switch On or Off"/>
+    <MultiSelectListPreference
+        android:dialogTitle="Select duration"
+        android:entries="@array/time_title"
+        android:entryValues="@array/time_value"
+        android:key="multiSelectList"
+        android:summary="Click to show a MultiSelectlist to choose from"
+        android:title="MultiSelectList Preference"/>
+
+    <SeekBarPreference
+        android:title="SeekBar"
+        android:summary="Drag to change"
+        android:key="seek"/>
+
+
+</PreferenceScreen>

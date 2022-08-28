@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#110E2E"
+    tools:context="com.example.AndroidAssignment.Assignment10.MainAss10">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001">
+
+        <EditText
+            android:id="@+id/edtMax"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="#261C53"
+            android:gravity="center"
+            android:text="-1"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imgIncrea"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/imgDecrea"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/subtr" />
+
+        <ImageView
+            android:id="@+id/imgPlay"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/play" />
+
+        <ImageView
+            android:id="@+id/imgStop"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            app:srcCompat="@drawable/stop" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame1Ass10"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112"/>
+
+    <FrameLayout
+        android:id="@+id/frame2Ass10"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304"/>
+
+    <FrameLayout
+        android:id="@+id/frame3Ass10"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"/>
+
+    <FrameLayout
+        android:id="@+id/frame4Ass10"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698"/>
+
+    <FrameLayout
+        android:id="@+id/frame5Ass10"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.904"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

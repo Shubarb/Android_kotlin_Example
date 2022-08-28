@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_ass7"
+    app:startDestination="@id/inforFragment">
+
+    <fragment
+        android:id="@+id/inforFragment"
+        android:name="com.example.AndroidAssignment.Assignment7.InforFragment"
+        android:label="fragment_infor"
+        tools:layout="@layout/fragment_infor" >
+        <action
+            android:id="@+id/actionInforToRcv"
+            app:destination="@id/rcvFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <argument
+            android:name="namei"
+            app:argType="string"
+            android:defaultValue ="@null"
+            app:nullable="true"/>
+        <argument
+            android:name="codei"
+            app:argType="integer"
+            android:defaultValue= "0"
+            />
+        <argument
+            android:name="costi"
+            app:argType="float"
+            android:defaultValue="0"
+            />
+        <argument
+            android:name="informationi"
+            app:argType="string"
+            android:defaultValue="@null"
+            app:nullable="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/rcvFragment"
+        android:name="com.example.AndroidAssignment.Assignment7.RcvFragment"
+        android:label="fragment_rcv"
+        tools:layout="@layout/fragment_rcv" >
+        <action
+            android:id="@+id/actionRcvToDetail"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <argument
+            android:name="namercv"
+            app:argType="string" />
+        <argument
+            android:name="codercv"
+            app:argType="integer" />
+        <argument
+            android:name="costrcv"
+            app:argType="float" />
+        <argument
+            android:name="informationrcv"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.AndroidAssignment.Assignment7.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/actionDetailToInfor"
+            app:destination="@id/inforFragment" />
+        <argument
+            android:name="food"
+            app:argType="com.example.AndroidAssignment.Assignment7.Foods" />
+
+    </fragment>
+</navigation>

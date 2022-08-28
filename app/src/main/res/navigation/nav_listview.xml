@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_listview"
+    app:startDestination="@id/inputFragmentNav">
+
+    <fragment
+        android:id="@+id/inputFragmentNav"
+        android:name="com.example.AndroidAssignment.Assignment7.ListView.InputFragmentNav"
+        android:label="fragment_input_nav"
+        tools:layout="@layout/fragment_input_nav" >
+        <action
+            android:id="@+id/actionInforToListView"
+            app:destination="@id/listViewFragmentNav" />
+        <argument
+            android:name="namenav"
+            app:argType="string"
+            android:defaultValue="@null"
+            app:nullable="true"/>
+        <argument
+            android:name="codenav"
+            app:argType="integer"
+            android:defaultValue="0"/>
+        <argument
+            android:name="costnav"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="infornav"
+            app:argType="string"
+            android:defaultValue="@null"
+            app:nullable="true"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/listViewFragmentNav"
+        android:name="com.example.AndroidAssignment.Assignment7.ListView.ListViewFragmentNav"
+        android:label="fragment_list_view_nav"
+        tools:layout="@layout/fragment_list_view_nav" >
+        <action
+            android:id="@+id/actionListViewToDetail"
+            app:destination="@id/detailFragmentListNav" />
+        <argument
+            android:name="namenavlist"
+            app:argType="string" />
+        <argument
+            android:name="codenavlist"
+            app:argType="integer" />
+        <argument
+            android:name="costnavlist"
+            app:argType="float" />
+        <argument
+            android:name="infornavlist"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragmentListNav"
+        android:name="com.example.AndroidAssignment.Assignment7.ListView.DetailFragmentListNav"
+        android:label="fragment_detail_list_nav"
+        tools:layout="@layout/fragment_detail_list_nav" >
+        <action
+            android:id="@+id/actionDeToInfo"
+            app:destination="@id/inputFragmentNav" />
+        <argument
+            android:name="namenavde"
+            app:argType="string" />
+        <argument
+            android:name="codenavde"
+            app:argType="integer" />
+        <argument
+            android:name="costnavde"
+            app:argType="float" />
+        <argument
+            android:name="infornavde"
+            app:argType="string" />
+        <argument
+            android:name="imgnavde"
+            app:argType="integer" />
+    </fragment>
+</navigation>

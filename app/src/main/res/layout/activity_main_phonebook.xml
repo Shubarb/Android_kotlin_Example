@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#100A19"
+    tools:context="com.example.AndroidAssignment.Assignment9.MainActivityPhonebook">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="680dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điện thoại"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="170dp"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/three_points" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/rcvnumber"
+        tools:listitem="@layout/number"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/framephone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="680dp">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="Bàn phím"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="60dp"/>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="Gần đây"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="50dp"/>
+
+        <ImageView
+            android:id="@+id/imgDanhBa"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="50dp"
+            app:srcCompat="@drawable/danhba_while"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

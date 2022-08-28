@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#100A19"
+    tools:context="com.example.AndroidAssignment.Assignment9.AddNewActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1B1414">
+        <EditText
+            android:id="@+id/edtNamePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tên"
+            android:textColorHint="#989797"
+            android:textColor="#989797"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPersonName"
+            tools:ignore="DuplicateClickableBoundsCheck"/>
+
+        <EditText
+            android:id="@+id/edtNumberPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#989797"
+            android:textColorHint="#989797"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPersonName"
+            android:hint="Điện thoại" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/person" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="42dp"
+            android:textColor="#989797"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/phone"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="113dp"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imgThoat"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="70dp"
+        android:src="@drawable/thoat" />
+
+    <ImageView
+        android:id="@+id/imgLuu"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="250dp"
+        android:src="@drawable/luu" />
+</FrameLayout>

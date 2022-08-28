@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.example.AndroidAssignment.Assignment7.InforFragment">
+
+    <EditText
+        android:id="@+id/edtCodefrag2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="670dp"
+        android:paddingStart="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Nhập mã sản phẩm"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtNamefrag2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="610dp"
+        android:paddingStart="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Nhập tên sản phẩm"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtInformationfrag2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="550dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Nhập thông tin mô tả sản phẩm"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edtCostfrag2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="490dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Nhập giá sản phẩm"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnaddnewfrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:text="Add new" />
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rcvInput"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="300dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        tools:listitem="@layout/itemlinear"/>-->
+
+</FrameLayout>

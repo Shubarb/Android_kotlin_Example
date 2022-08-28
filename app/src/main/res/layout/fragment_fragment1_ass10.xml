@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#FFFFFF"
+    android:layout_margin="5dp"
+    android:id="@+id/fragment1Ass10"
+    tools:context="com.example.AndroidAssignment.Assignment10.Fragment1Ass10">
+
+    <TextView
+        android:id="@+id/txtfragment1Ass10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" "
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</FrameLayout>

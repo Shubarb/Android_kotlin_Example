@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#283071">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="10"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Vui lòng nhập thông tin"
+        android:background="#101970"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt1"
+        android:background="#D8D8D8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:paddingStart="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập tài khoản" />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="#D8D8D8"
+        android:ems="10"
+        android:hint="Nhập họ tên"
+        android:inputType="date|textShortMessage|textLongMessage|textAutoCorrect|textVisiblePassword|textWebEditText|textMultiLine|textNoSuggestions|textFilter|textPersonName|text|textCapSentences"
+        android:paddingStart="5dp" />
+
+    <EditText
+        android:id="@+id/edt3"
+        android:background="#D8D8D8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:paddingStart="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập tuổi"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#283071">
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="10"
+            android:background="@color/white"
+            android:paddingTop="5dp"
+            android:padding="5dp"
+            android:text="Giới tính"
+            android:textSize="20dp"/>
+        <Spinner
+            android:id="@+id/dropdown"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="20dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp"
+        android:text="Confirm" />
+
+
+</LinearLayout>
